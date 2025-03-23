@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "Figtree";
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+/* Fonts Finish */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Figtree", sans-serif;
+  font-size: 15px;
+  background-color: #f5cf4e;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card{
+    width: 382px;
+    /* height: 521px; */
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 8px 8px 0px 0px #000;
+}
+
+.card__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* точна вредност */
+    margin-bottom: 24px;
+  }
+
+  .card__title {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 900;
+    width: 90%;
+  }
+
+  .card__text {
+    width: 100%;
+    color: #757575;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6em;
+  }
+
+  .card-badge{
+    background-color: #f5cf4e;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+
+  .card-date{
+    margin-top: 24px;
+    font-weight: 600;
+  }
+
+  .card__avatar{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .card__avatar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+  .card__avatar figcaption {
+    font-weight: 700;
+    font-size: 14px;
+  }
